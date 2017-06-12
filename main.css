@@ -1,10 +1,41 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald);
 
-body{
-    font-family: 'Oswald', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
-.btn{
-    margin: 4px;
-    box-shadow: 3px 3px 5px navy;
+#calculator {
+    width: 325px;
+    height: auto;
+    margin: 100px auto;
+    padding: 20px 20px 9px;;
+    background: linear-gradient(#9dd2ea, #8bceec);
+    border-radius: 3px;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold; 
+}
+
+.keys, .top {
+    overflow: hidden;
+}
+
+.keys span, .top span.clear {
+    float: left;
+    width: 66px;
+    height: 40px;
+    background: white;
+    border-radius: 3px;
+    margin: 0 7px 11px 0;
+    line-height: 40px;
+    text-align: center;
+}
+
+span.operator {
+    margin-right: 0;
 }
